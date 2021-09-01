@@ -2,7 +2,11 @@
 
 In this project, we tended to use Long Short-Term Memory (LSTM) network and Convolutional Neural Network (CNN) to find the probability of an incident or accident occurring between the short time period datasets. We try to build three architecture models with various activation functions and then compare each result of them giving the highest accuracy.
 
-**It should be noted that the datasets are not provided here due to the company agreement and privacy reasons.**
+**It should be noted that the datasets are not provided here due to the company agreements and privacy reasons.**
+
+### Problem Statement
+
+Searching the entire video from dashcam and going through log data consumes a lot of manpower and material resources.  Therefore, this project find the proportion of the probability that an incident or accident moment is included in a short amount of time video and dataset. In this way, we can reduce the time consumed searching through a full-length of hundred or thousand videos per day.
 
 ### Preprocessing
 
