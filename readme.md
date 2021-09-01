@@ -2,7 +2,7 @@
 
 In this project, we tended to use Long Short-Term Memory (LSTM) network and Convolutional Neural Network (CNN) to find the probability of an incident or accident occurring between the short time period datasets. We try to build three architecture models with various activation functions and then compare each result of them giving the highest accuracy.
 
-*It should be noted that the datasets are not provided here due to the company agreement and privacy reasons.*
+**It should be noted that the datasets are not provided here due to the company agreement and privacy reasons.**
 
 ### Preprocessing
 
@@ -12,17 +12,21 @@ The original car’s acceleration dataset of each car contains a timestamp and a
 
 First, we basically analyze our dataset to see which model we should build, and since it is related to time-series, we instantly focus on the LSTM network as it might learn and classify our sequential data the best. Apart from the time-sequential, we realize that the CNN model will also be a good choice for our dataset as it focuses on the reversal of data periodically, a sudden break for example. Therefore, we also design a model based on the CNN network with different activations as they might be able to provide greater results. Based on that, we also try to combine these 2 models together to see if there is a difference in the results.
 
-<img src='./images/lstm-model.png' width='200'>
+<div align='center'>
 
-*The model based on LSTM*
+  <img src='./images/lstm-model.png' width='200'>
+  
+  *The model based on LSTM*
 
-<img src='./images/cnn-model.png' width='200'>
+  <img src='./images/cnn-model.png' width='200'>
 
-*The model based on CNN*
+  *The model based on CNN*
 
-<img src='./images/combined-model.png' width='500'>
+  <img src='./images/combined-model.png' width='500'>
 
-*The model based on the combination of LSTM and CNN*
+  *The model based on the combination of LSTM and CNN*
+
+</div>
 
 ### Training
 
@@ -32,10 +36,14 @@ We choose Cross-entropy loss function to minimize the loss and Adam optimization
 
 Train and test loss on the CNN model with PRelu activation, giving the satisfied  result among different models and activations and having the highest accuracy of 91.667% 
 
-<img src='./images/loss.png' width='500'>
+<div align='center'>
 
-*Tain and test loss on the CNN model with PRelu*
+  <img src='./images/loss.png' width='500'>
 
-<img src='./images/acc.png' width='500'>
+  *Tain and test loss on the CNN model with PRelu*
 
-*Accuracy comparison*
+  <img src='./images/acc.png' width='500'>
+
+  *Accuracy comparison*
+
+</div>
